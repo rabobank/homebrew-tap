@@ -1,22 +1,22 @@
-# Generated with JReleaser 1.11.0 at 2024-03-19T10:39:08.300878235Z
+# Generated with JReleaser 1.13.1 at 2024-08-30T11:20:28.646747924Z
 
 class Ret < Formula
   desc "RET Engineering Tools"
   homepage "https://github.com/rabobank/ret-engineering-tools"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT License"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rabobank/ret-engineering-tools/releases/download/0.2.3/ret-0.2.3-linux-x86_64.zip"
-    sha256 "0b0732252fd3486d1e0d87e03052b4bcd001a06ffc84084c6ea53e51f7fdaa2d"
+    url "https://github.com/rabobank/ret-engineering-tools/releases/download/0.2.4/ret-0.2.4-linux-x86_64.zip"
+    sha256 "5606e5e41d2d6bce58f3e968c58bc2a79f690260e61b3811993b03a8dc9671f1"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/rabobank/ret-engineering-tools/releases/download/0.2.3/ret-0.2.3-osx-aarch_64.zip"
-    sha256 "c9244ce8f4beb7dd328c3e66b8de4756249d3da44d54afc0961370e700a8cb60"
+    url "https://github.com/rabobank/ret-engineering-tools/releases/download/0.2.4/ret-0.2.4-osx-aarch_64.zip"
+    sha256 "1d34f9f4523bdf70ba533526e38f993270cf34ac9f077d250f5d80859114df61"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rabobank/ret-engineering-tools/releases/download/0.2.3/ret-0.2.3-osx-x86_64.zip"
-    sha256 "a0961d3d2e0654b2256c38df21fc7b3d7e6af210a4c35184cfe2a6f82b2bebbc"
+    url "https://github.com/rabobank/ret-engineering-tools/releases/download/0.2.4/ret-0.2.4-osx-x86_64.zip"
+    sha256 "00ab1d602ef84b800989109137e227578be631990d6a0e43164c71f0b2571380"
   end
 
 
@@ -27,6 +27,6 @@ class Ret < Formula
 
   test do
     output = shell_output("#{bin}/ret --version")
-    assert_match "0.2.3", output
+    assert_match "0.2.4", output
   end
 end
